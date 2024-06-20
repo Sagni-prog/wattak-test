@@ -20,10 +20,10 @@ const EditProduct = ({ product }) => {
     };
 
     return (
-        <div className="mx-auto p-6 bg-white rounded-lg shadow-lg max-w-2xl mt-20">
+        <div className="mx-auto p-6 bg-white rounded-lg shadow-lg max-w-2xl mt-8">
             <div className="flex justify-between items-center mb-6">
                 <h1 className="text-3xl font-bold text-gray-700">
-                    Create New Product
+                    Edit Product
                 </h1>
                 <Link
                     href="/"
@@ -53,7 +53,7 @@ const EditProduct = ({ product }) => {
                         name="description"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring focus:border-blue-300"
+                        className="mt-1 h-32 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring focus:border-blue-300"
                     />
                 </div>
                 <div>

@@ -20,7 +20,7 @@ const AddProduct = () => {
     };
 
     return (
-        <div className="mx-auto p-6 bg-white rounded-lg shadow-lg max-w-2xl mt-20">
+        <div className="mx-auto p-6 bg-white rounded-lg shadow-lg max-w-2xl mt-8">
             <div className="flex justify-between items-center mb-6">
                 <h1 className="text-3xl font-bold text-gray-700">
                     Create New Product
@@ -44,11 +44,6 @@ const AddProduct = () => {
                         onChange={(e) => setName(e.target.value)}
                         className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring focus:border-blue-300"
                     />
-                    {/* {errors.name && (
-                        <div className="text-red-500 text-sm mt-2">
-                            {errors.name}
-                        </div>
-                    )} */}
                 </div>
                 <div>
                     <label className="block text-sm font-medium text-gray-700">
@@ -58,13 +53,8 @@ const AddProduct = () => {
                         name="description"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring focus:border-blue-300"
+                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 h-32 focus:outline-none focus:ring focus:border-blue-300"
                     />
-                    {/* {errors.description && (
-                        <div className="text-red-500 text-sm mt-2">
-                            {errors.description}
-                        </div>
-                    )} */}
                 </div>
                 <div>
                     <label className="block text-sm font-medium text-gray-700">
@@ -77,11 +67,6 @@ const AddProduct = () => {
                         onChange={(e) => setPrice(e.target.value)}
                         className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring focus:border-blue-300"
                     />
-                    {/* {errors.price && (
-                        <div className="text-red-500 text-sm mt-2">
-                            {errors.price}
-                        </div>
-                    )} */}
                 </div>
                 <div>
                     <label className="block text-sm font-medium text-gray-700">
@@ -94,16 +79,10 @@ const AddProduct = () => {
                         onChange={(e) => setStock(e.target.value)}
                         className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring focus:border-blue-300"
                     />
-                    {/* {errors.stock && (
-                        <div className="text-red-500 text-sm mt-2">
-                            {errors.stock}
-                        </div>
-                    )} */}
                 </div>
                 <div className="flex justify-end">
                     <button
                         type="submit"
-                        // disabled={processing}
                         className="bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
                     >
                         Create Product
